@@ -739,44 +739,92 @@ h2.section-lead {
 }
 
 @media (max-width: 720px) {
+  body::before {
+    background-size: 30px 30px;
+    opacity: 0.48;
+  }
+
   .page-shell {
     width: min(100% - 24px, 1180px);
     padding-top: 12px;
+    padding-bottom: 56px;
   }
 
   .about-page {
     padding: 0;
   }
 
+  .site-header {
+    gap: 14px;
+    padding-bottom: 18px;
+  }
+
+  .brand {
+    gap: 12px;
+  }
+
+  .brand-mark {
+    width: 48px;
+    height: 48px;
+    font-size: 1rem;
+  }
+
+  .brand-text {
+    font-size: 0.72rem;
+  }
+
+  .site-nav {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .site-nav a {
+    flex: 1 1 0;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 12px;
+    border: 1px solid rgba(61, 44, 35, 0.1);
+    border-radius: 999px;
+    background: rgba(255, 250, 242, 0.65);
+  }
+
   .about-image {
     margin: -26px -26px 26px;
-    aspect-ratio: 1.28 / 1;
+    aspect-ratio: 1.02 / 1;
     border-radius: 24px 24px 0 0;
   }
 
+  .about-image::after {
+    background:
+      linear-gradient(180deg, rgba(17, 11, 8, 0.16) 0%, rgba(17, 11, 8, 0.36) 45%, rgba(17, 11, 8, 0.68) 100%),
+      linear-gradient(90deg, rgba(18, 12, 9, 0.62) 0%, rgba(18, 12, 9, 0.18) 70%, rgba(18, 12, 9, 0.04) 100%);
+  }
+
   .about-section {
-    gap: 26px;
-    padding-left: 24px;
+    gap: 24px;
+    margin-top: 12px;
+    padding-left: 0;
   }
 
-  .about-section::before {
-    left: 6px;
-  }
-
+  .about-section::before,
   .about-block::before {
-    left: -24px;
-    width: 13px;
-    height: 13px;
-    box-shadow: 0 0 0 4px rgba(244, 239, 230, 0.72);
+    display: none;
+  }
+
+  .about-block.statement,
+  .about-block.evolution {
+    width: 100%;
   }
 
   .about-card .hero-overlay {
-    padding: 24px;
+    padding: 22px;
   }
 
   .about-kicker {
-    top: 18px;
-    left: 24px;
+    top: 16px;
+    left: 22px;
   }
 
   .about-card .hero-copy {
@@ -784,8 +832,14 @@ h2.section-lead {
   }
 
   .about-card .section-lead {
-    max-width: 15ch;
-    font-size: clamp(1.8rem, 8vw, 2.35rem);
+    max-width: 11ch;
+    font-size: clamp(1.65rem, 8.2vw, 2.15rem);
+    line-height: 1.02;
+  }
+
+  .about-summary {
+    font-size: clamp(1.08rem, 4.9vw, 1.32rem);
+    line-height: 1.58;
   }
 
   .site-header,
@@ -797,8 +851,8 @@ h2.section-lead {
   .hero-copy,
   .section,
   .hero-panel {
-    padding: 26px;
-    border-radius: 24px;
+    padding: 22px;
+    border-radius: 22px;
   }
 
   .hero {
@@ -807,5 +861,75 @@ h2.section-lead {
 
   .hero h1 {
     font-size: clamp(2.35rem, 15vw, 4rem);
+  }
+
+  .gatherings-header {
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .gatherings-intro {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .gathering-card {
+    padding: 18px;
+    gap: 16px;
+    border-radius: 20px;
+  }
+
+  .gathering-media {
+    min-height: 220px;
+    border-radius: 16px;
+  }
+
+  .gathering-media img,
+  .gathering-gallery img {
+    border-radius: 16px;
+  }
+
+  .gathering-body {
+    padding: 0;
+  }
+
+  .card-index {
+    margin-bottom: 12px;
+    font-size: 0.76rem;
+  }
+
+  .gathering-title {
+    font-size: 1.32rem;
+    line-height: 1.12;
+  }
+
+  .gathering-meta,
+  .gathering-tag {
+    font-size: 0.84rem;
+  }
+
+  .gathering-gallery {
+    gap: 10px;
+  }
+
+  .connect .eyebrow {
+    margin-bottom: 18px;
+  }
+
+  .connect-card {
+    border-radius: 20px;
+  }
+
+  .connect-card h3 {
+    font-size: 1.35rem;
+  }
+
+  .connect-card .button {
+    width: 100%;
+  }
+
+  .site-footer {
+    gap: 8px;
+    font-size: 0.82rem;
   }
 }
