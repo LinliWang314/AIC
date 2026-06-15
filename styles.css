@@ -600,7 +600,7 @@ h2.section-lead {
 }
 
 .upcoming-body {
-  flex: 0 0 36%;
+  flex: 0 0 58%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -623,43 +623,6 @@ h2.section-lead {
   grid-template-columns: repeat(2, max-content);
   align-items: center;
   margin-top: 10px;
-}
-
-.upcoming-side {
-  flex: 0 0 16%;
-  display: grid;
-  gap: 12px;
-  align-self: stretch;
-  min-width: 0;
-}
-
-.upcoming-side-panel {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  min-height: 0;
-  padding: 18px;
-  border-radius: 18px;
-  background: rgba(255, 248, 239, 0.82);
-  border: 1px solid rgba(61, 44, 35, 0.08);
-}
-
-.upcoming-side-panel-soft {
-  background: rgba(249, 241, 229, 0.74);
-}
-
-.upcoming-side-label {
-  margin: 0 0 10px;
-  color: var(--accent-2);
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.upcoming-side-copy {
-  margin: 0;
-  color: var(--ink);
-  line-height: 1.55;
 }
 
 .gatherings-archive {
@@ -905,14 +868,8 @@ h2.section-lead {
 
   .gathering-body,
   .gathering-gallery,
-  .upcoming-body,
-  .upcoming-side {
+  .upcoming-body {
     flex: none;
-  }
-
-  .upcoming-side {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-self: auto;
   }
 
   .gathering-gallery {
@@ -1084,10 +1041,6 @@ h2.section-lead {
   .upcoming-title {
     font-size: 1.8rem;
     max-width: 13ch;
-  }
-
-  .upcoming-side {
-    display: none;
   }
 
   .upcoming-actions .button {
