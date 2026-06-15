@@ -834,14 +834,17 @@ h2.section-lead {
 }
 
 .connect-stack {
-  grid-template-columns: 1fr;
-  width: 100%;
-  justify-items: center;
+  grid-template-columns: minmax(0, 1.16fr) minmax(280px, 0.84fr);
+  width: min(100%, 980px);
+  margin: 0 auto;
+  align-items: stretch;
 }
 
 .connect-card {
-  width: min(100%, 980px);
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
 }
 
 .connect-card h3 {
@@ -849,6 +852,41 @@ h2.section-lead {
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+.connect-kicker {
+  margin: 0 0 14px;
+  color: var(--accent-2);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.connect-card-primary {
+  padding: 28px;
+  background:
+    radial-gradient(circle at top right, rgba(138, 75, 42, 0.14), transparent 34%),
+    linear-gradient(180deg, rgba(255, 248, 240, 0.96) 0%, rgba(255, 250, 242, 0.9) 100%);
+  border-color: rgba(138, 75, 42, 0.14);
+}
+
+.connect-card-primary::after {
+  position: absolute;
+  inset: auto 24px 0;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, rgba(138, 75, 42, 0.24), rgba(138, 75, 42, 0));
+}
+
+.connect-card-secondary {
+  display: grid;
+  align-content: start;
+  background:
+    linear-gradient(180deg, rgba(255, 252, 247, 0.96) 0%, rgba(255, 250, 242, 0.84) 100%);
+}
+
+.connect-card-secondary .button-secondary {
+  background: rgba(255, 248, 239, 1);
 }
 
 .connect-subhead {
@@ -1151,6 +1189,10 @@ h2.section-lead {
 
   .connect-card {
     border-radius: 20px;
+  }
+
+  .connect-kicker {
+    margin-bottom: 12px;
   }
 
   .connect-card h3 {
