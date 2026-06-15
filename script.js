@@ -15,14 +15,15 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.18,
+    rootMargin: "0px 0px 18% 0px",
+    threshold: 0.04,
   }
 );
 
 sections.forEach((section, index) => {
   const rect = section.getBoundingClientRect();
   const isInitiallyVisible =
-    rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
+    rect.top < window.innerHeight * 1.35 && rect.bottom > 0;
 
   if (isInitiallyVisible) {
     revealImmediately(section);
