@@ -1342,14 +1342,14 @@ h2.section-lead {
 
   .about-image {
     margin: -26px -26px 26px;
-    aspect-ratio: 1.02 / 1;
+    aspect-ratio: 0.92 / 1;
     border-radius: 24px 24px 0 0;
   }
 
   .about-image::after {
     background:
-      linear-gradient(180deg, rgba(17, 11, 8, 0.16) 0%, rgba(17, 11, 8, 0.36) 45%, rgba(17, 11, 8, 0.68) 100%),
-      linear-gradient(90deg, rgba(18, 12, 9, 0.62) 0%, rgba(18, 12, 9, 0.18) 70%, rgba(18, 12, 9, 0.04) 100%);
+      linear-gradient(180deg, rgba(17, 11, 8, 0.12) 0%, rgba(17, 11, 8, 0.34) 42%, rgba(17, 11, 8, 0.78) 100%),
+      linear-gradient(90deg, rgba(18, 12, 9, 0.82) 0%, rgba(18, 12, 9, 0.34) 58%, rgba(18, 12, 9, 0.08) 100%);
   }
 
   .about-section {
@@ -1370,7 +1370,7 @@ h2.section-lead {
   }
 
   .about-card .hero-overlay {
-    padding: 22px;
+    padding: 22px 20px 18px;
     align-items: end;
   }
 
@@ -1380,24 +1380,24 @@ h2.section-lead {
   }
 
   .about-card .hero-copy {
-    max-width: 100%;
-    gap: 10px;
+    max-width: min(100%, 22rem);
+    gap: 12px;
   }
 
   .about-card .section-lead {
-    max-width: 11ch;
-    font-size: clamp(1.65rem, 8.2vw, 2.15rem);
-    line-height: 1.02;
+    max-width: 9.5ch;
+    font-size: clamp(1.52rem, 7.4vw, 1.98rem);
+    line-height: 1.08;
   }
 
   .hero-subtitle {
-    max-width: 100%;
-    font-size: 0.94rem;
-    line-height: 1.65;
+    max-width: 21rem;
+    font-size: 0.9rem;
+    line-height: 1.7;
   }
 
   .about-card .hero-actions {
-    margin-top: 16px;
+    margin-top: 12px;
   }
 
   .about-summary {
