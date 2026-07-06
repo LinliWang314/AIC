@@ -1364,12 +1364,14 @@ h2.section-lead {
   }
 
   .about-block.statement,
+  .about-block.audience,
   .about-block.evolution {
     width: 100%;
   }
 
   .about-card .hero-overlay {
     padding: 22px;
+    align-items: end;
   }
 
   .about-kicker {
@@ -1379,12 +1381,23 @@ h2.section-lead {
 
   .about-card .hero-copy {
     max-width: 100%;
+    gap: 10px;
   }
 
   .about-card .section-lead {
     max-width: 11ch;
     font-size: clamp(1.65rem, 8.2vw, 2.15rem);
     line-height: 1.02;
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+    font-size: 0.94rem;
+    line-height: 1.65;
+  }
+
+  .about-card .hero-actions {
+    margin-top: 16px;
   }
 
   .about-summary {
@@ -1502,6 +1515,40 @@ h2.section-lead {
   .essay-article,
   .gallery-card {
     border-radius: 20px;
+  }
+
+  .why-aic-list {
+    gap: 14px;
+  }
+
+  .why-aic-item {
+    padding-left: 24px;
+  }
+
+  .why-aic-item::before {
+    left: -24px;
+  }
+
+  .who-aic-copy,
+  .why-aic-item p {
+    font-size: 0.96rem;
+    line-height: 1.72;
+  }
+
+  .founder-note-strip {
+    gap: 14px;
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .founder-portrait {
+    width: 72px;
+    height: 72px;
+  }
+
+  .founder-summary {
+    font-size: 0.98rem;
+    line-height: 1.52;
   }
 
   .journal-entry-preview {
