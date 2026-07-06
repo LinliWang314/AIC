@@ -151,6 +151,15 @@ body::before {
   border-radius: 36px;
 }
 
+.hero-subtitle {
+  margin: 14px 0 0;
+  max-width: 34rem;
+  color: rgba(255, 251, 246, 0.98);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  text-shadow: 0 2px 18px rgba(10, 7, 5, 0.45);
+}
+
 .about-image {
   position: relative;
   margin: -40px -40px 34px;
@@ -165,8 +174,8 @@ body::before {
   inset: 0;
   content: "";
   background:
-    linear-gradient(90deg, rgba(18, 12, 9, 0.72) 0%, rgba(18, 12, 9, 0.38) 34%, rgba(18, 12, 9, 0.1) 58%, rgba(18, 12, 9, 0.02) 100%),
-    linear-gradient(180deg, rgba(20, 14, 10, 0.04) 0%, rgba(20, 14, 10, 0.16) 42%, rgba(20, 14, 10, 0.42) 100%);
+    linear-gradient(90deg, rgba(18, 12, 9, 0.84) 0%, rgba(18, 12, 9, 0.58) 36%, rgba(18, 12, 9, 0.2) 62%, rgba(18, 12, 9, 0.04) 100%),
+    linear-gradient(180deg, rgba(20, 14, 10, 0.08) 0%, rgba(20, 14, 10, 0.2) 42%, rgba(20, 14, 10, 0.5) 100%);
 }
 
 .about-image img {
@@ -364,10 +373,17 @@ body::before {
 }
 
 .about-card .hero-copy {
-  border-radius: 0;
+  border-radius: 30px;
   display: grid;
   justify-items: start;
   align-content: start;
+  gap: 0;
+  max-width: min(100%, 42rem);
+  padding: 28px 30px;
+  background: rgba(18, 12, 9, 0.34);
+  border: 1px solid rgba(255, 250, 242, 0.12);
+  box-shadow: 0 22px 44px rgba(8, 5, 4, 0.2);
+  backdrop-filter: blur(10px);
 }
 
 .about-card .hero-copy .eyebrow,
