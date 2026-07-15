@@ -501,6 +501,10 @@ h2.section-lead {
   width: min(100%, 760px);
 }
 
+.about-block.home {
+  width: min(100%, 840px);
+}
+
 .about-block.evolution {
   width: min(100%, 840px);
 }
@@ -575,6 +579,16 @@ h2.section-lead {
   line-height: 1.45;
 }
 
+.about-location {
+  margin: -10px 0 2px;
+  color: rgba(61, 44, 35, 0.56);
+  font-size: 0.65rem;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .founder-portrait {
   flex: 0 0 auto;
   width: 96px;
@@ -590,6 +604,14 @@ h2.section-lead {
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.home-note-strip {
+  align-items: flex-start;
+}
+
+.home-portrait {
+  background: #9f1608;
 }
 
 .founder-note-copy {
