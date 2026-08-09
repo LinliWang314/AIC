@@ -757,6 +757,16 @@ h2.section-lead {
   line-height: 1.15;
 }
 
+.next-gathering-meta {
+  color: var(--ink);
+  font-size: 0.92rem;
+}
+
+.next-gathering-tag {
+  color: var(--accent-2);
+  font-size: 0.88rem;
+}
+
 .next-gathering-copy p {
   color: var(--muted);
   font-size: 0.98rem;
