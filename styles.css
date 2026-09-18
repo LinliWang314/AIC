@@ -713,6 +713,50 @@ h2.section-lead {
   grid-template-columns: 1fr;
 }
 
+.gatherings-more-toggle {
+  display: flex;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 12px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.gatherings-more-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.gatherings-more-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.gatherings-more-icon {
+  width: 7px;
+  height: 7px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+}
+
+.gatherings-less-label,
+.gatherings-more[open] .gatherings-more-label {
+  display: none;
+}
+
+.gatherings-more[open] .gatherings-less-label {
+  display: inline;
+}
+
+.gatherings-more[open] .gatherings-more-icon {
+  transform: rotate(225deg) translate(-2px, -2px);
+}
+
+.gatherings-more[open] > .gatherings-grid {
+  margin-top: 20px;
+}
+
 .gatherings-spotlight,
 .gatherings-archive {
   width: min(100%, 980px);
