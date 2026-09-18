@@ -1349,8 +1349,14 @@ h2.section-lead {
   margin: 10px 0 6px;
 }
 
+.essay-figure-portrait {
+  width: min(100%, 520px);
+  margin-inline: auto;
+}
+
 .essay-figure-image {
   width: 100%;
+  height: auto;
   display: block;
   border-radius: 20px;
   border: 1px solid rgba(61, 44, 35, 0.08);
