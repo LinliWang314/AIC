@@ -1411,6 +1411,27 @@ h2.section-lead {
   display: block;
 }
 
+.outputs-gallery {
+  align-items: start;
+}
+
+.outputs-gallery .gallery-card {
+  margin: 0;
+}
+
+.outputs-gallery .gallery-card img {
+  height: auto;
+}
+
+.output-image-link {
+  display: block;
+}
+
+.output-image-link:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
 .gallery-card figcaption {
   margin: 0;
   padding: 0 18px 18px;
