@@ -922,10 +922,6 @@ h2.section-lead {
   padding: 6px 0;
 }
 
-.gathering-card-summary .gathering-body {
-  flex: 1;
-}
-
 .gathering-title {
   margin-top: 2px;
   max-width: none;
