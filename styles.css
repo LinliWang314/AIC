@@ -740,6 +740,8 @@ h2.section-lead {
 }
 
 .next-gathering-media {
+  aspect-ratio: 1;
+  align-self: center;
   overflow: hidden;
   border-radius: 18px;
   min-height: 260px;
@@ -918,6 +920,10 @@ h2.section-lead {
   justify-content: center;
   min-width: 0;
   padding: 6px 0;
+}
+
+.gathering-card-summary .gathering-body {
+  flex: 1;
 }
 
 .gathering-title {
