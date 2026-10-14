@@ -8,7 +8,7 @@
       name="description"
       content="Join Aesthetic Intelligence Circle for small-group AI art workshops in Menlo Park, California. Explore upcoming Bay Area gatherings, participant work, and essays."
     />
-    <link rel="stylesheet" href="styles.css?v=59" />
+    <link rel="stylesheet" href="styles.css?v=60" />
     <link rel="canonical" href="https://aicircle.app/" />
     <meta property="og:site_name" content="Aesthetic Intelligence Circle (AIC)" />
     <meta property="og:type" content="website" />
@@ -498,40 +498,64 @@
           </div>
         </section>
 
-        <section class="section connect" id="connect">
-          <p class="eyebrow">Get Involved</p>
-          <div class="connect-layout">
-            <div class="connect-stack">
-              <div class="connect-card connect-card-primary">
-                <p class="connect-kicker">Early Collaborators</p>
-                <h3>Help Shape AIC</h3>
-                <p>
-                  We're inviting a small group of collaborators to help shape
-                  AIC through outreach, documentation, and events.
-                </p>
-                <ul class="panel-list">
-                  <li>Community outreach / Ambassador</li>
-                  <li>Photography / Documentation</li>
-                  <li>Event operations / On-site support</li>
-                  <li>Other ways to contribute</li>
-                </ul>
-                <p class="connect-subhead">Why join</p>
-                <ul class="panel-list">
-                  <li>Be part of the community early</li>
-                  <li>Meet thoughtful, like-minded people</li>
-                  <li>Bring your perspective to future gatherings</li>
-                  <li>Receive priority access to selected events</li>
-                </ul>
-                <a class="button button-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe25XABpXrTn1LSqGIwp_ITAg4aq34HiDJvXs6emTjC5E2jRg/viewform?usp=header" target="_blank" rel="noreferrer">Express Interest</a>
+        <section class="section connect" id="connect" aria-labelledby="connect-title">
+          <div class="connect-content">
+            <p class="eyebrow">Get Involved</p>
+            <h2 id="connect-title">Let’s create something together.</h2>
+            <p class="connect-intro">Collaborate with AIC, or stay close to what’s next.</p>
+
+            <div class="connect-tabs" role="tablist" aria-label="Connect with AIC">
+              <button class="connect-tab" id="contact-tab" type="button" role="tab" aria-selected="true" aria-controls="contact-panel" tabindex="0">Contact us</button>
+              <button class="connect-tab" id="luma-tab" type="button" role="tab" aria-selected="false" aria-controls="luma-panel" tabindex="-1">Follow AIC on Luma</button>
+            </div>
+
+            <div class="contact-panel" id="contact-panel" role="tabpanel" aria-labelledby="contact-tab">
+              <div id="contact-compose">
+                <h3 id="contact-title" tabindex="-1">Let’s talk.</h3>
+                <p class="contact-intro">Co-host a gathering, sponsor AIC, or volunteer. A few lines are enough to start a conversation.</p>
+                <!-- FormSubmit activation verified by an accepted delivery test. -->
+                <form id="contact-form" data-endpoint="https://formsubmit.co/ajax/mollywangg6@gmail.com" data-verified="true" aria-labelledby="contact-title">
+                  <fieldset class="contact-intents">
+                    <legend>I’d like to…</legend>
+                    <div class="contact-intent-options">
+                      <label><input type="radio" name="intent" value="cohost" required /><span>Co-host</span></label>
+                      <label><input type="radio" name="intent" value="sponsor" /><span>Sponsor</span></label>
+                      <label><input type="radio" name="intent" value="volunteer" /><span>Volunteer</span></label>
+                      <label><input type="radio" name="intent" value="other" /><span>Something else</span></label>
+                    </div>
+                  </fieldset>
+                  <div class="contact-field">
+                    <label for="contact-email">Your email</label>
+                    <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required />
+                  </div>
+                  <div class="contact-field">
+                    <label id="contact-message-label" for="contact-message">What do you have in mind?</label>
+                    <textarea id="contact-message" name="message" rows="4" maxlength="3000" placeholder="Tell us a little about your idea or how you’d like to help." required></textarea>
+                  </div>
+                  <div class="contact-honeypot" aria-hidden="true" inert>
+                    <label for="contact-website">Leave this field empty</label>
+                    <input id="contact-website" name="_honey" type="text" tabindex="-1" autocomplete="off" />
+                  </div>
+                  <div class="contact-send-row">
+                    <button class="button contact-send" type="submit" disabled>Send message <span aria-hidden="true">↗</span></button>
+                    <p>Your message goes to Linli, AIC’s founder.</p>
+                  </div>
+                  <p class="contact-status" id="contact-status" role="status" aria-live="polite"></p>
+                  <noscript><p>Please enable JavaScript to use this contact form.</p></noscript>
+                </form>
               </div>
-              <div class="connect-card connect-card-secondary">
-                <p class="connect-kicker">Future Updates</p>
-                <h3>Stay in the Loop</h3>
-                <p>
-                  Follow AIC on Luma for upcoming gatherings and community updates.
-                </p>
-                <a class="button button-primary" href="https://luma.com/aestheticintelligence" target="_blank" rel="noreferrer">Follow AIC on Luma</a>
+              <div class="contact-success" id="contact-success" hidden>
+                <span class="contact-success-mark" aria-hidden="true">✓</span>
+                <h3 id="contact-success-title" tabindex="-1">Thanks for reaching out.</h3>
+                <p>Your message has been submitted to Linli. If there’s a fit for an upcoming gathering, she’ll follow up by email.</p>
+                <button class="connect-other" id="contact-start-over" type="button">Send another message <span aria-hidden="true">↗</span></button>
               </div>
+            </div>
+
+            <div class="contact-panel connect-luma" id="luma-panel" role="tabpanel" aria-labelledby="luma-tab" hidden>
+              <h3>Stay in the loop.</h3>
+              <p>Just want to join a gathering? Follow AIC on Luma for upcoming events and community updates.</p>
+              <a class="button button-primary" href="https://luma.com/aestheticintelligence" target="_blank" rel="noreferrer">Follow AIC on Luma <span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </section>
@@ -544,5 +568,6 @@
     </div>
 
     <script src="script.js?v=5"></script>
+    <script src="contact.js?v=7"></script>
   </body>
 </html>
