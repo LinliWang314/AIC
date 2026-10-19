@@ -134,7 +134,7 @@
       form.removeAttribute('aria-busy');
       form.querySelectorAll('input, textarea').forEach(field => { field.disabled = false; });
       submit.disabled = !configured;
-      submit.innerHTML = 'Send message <span aria-hidden="true">↗</span>';
+      submit.textContent = 'Send message';
     }
   });
 
