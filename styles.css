@@ -966,6 +966,11 @@ h2.section-lead {
   padding: 6px 0;
 }
 
+.gathering-card-photo-story .gathering-media {
+  min-height: 0;
+  aspect-ratio: 1600 / 1171;
+}
+
 .gathering-card-photo-story .gathering-gallery {
   display: grid;
   grid-template-rows: auto;
@@ -1599,11 +1604,6 @@ h2.section-lead {
 }
 
 @media (max-width: 1080px) {
-  .gathering-card-photo-story .gathering-media {
-    min-height: 0;
-    aspect-ratio: 3 / 2;
-  }
-
   .gathering-card-photo-story .gathering-gallery .gathering-sharing-photo {
     aspect-ratio: 3 / 2;
   }
@@ -2093,4 +2093,21 @@ h2.section-lead {
   .workshop-facts { grid-template-columns: 1fr; gap: 18px; }
   .workshop-booking { padding: 20px; }
   .workshop-booking .button { width: 100%; text-align: center; }
+}
+
+/* A single selected world keeps the preview and exploration link together. */
+.selected-world-page .gathering-detail-header h1 { max-width: 20ch; }
+.selected-world-page .gathering-detail-heading { gap: 12px; }
+.selected-world-page .gathering-detail-title { max-width: none; font-size: clamp(1.55rem, 2.8vw, 2.2rem); }
+.selected-world-page .gathering-detail-actions { align-items: center; gap: 16px; }
+.selected-world-preview { margin: 0; }
+.selected-world-preview img { display: block; width: 100%; height: auto; border-radius: 18px; }
+.selected-world-preview figcaption,
+.selected-world-note { color: var(--muted); font-size: 0.85rem; line-height: 1.6; }
+.selected-world-preview figcaption { margin-top: 10px; }
+.selected-world-description { max-width: 65ch; line-height: 1.75; }
+.selected-world-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-bottom: 18px; }
+.selected-world-photos img { display: block; width: 100%; height: auto; border-radius: 16px; }
+@media (max-width: 720px) {
+  .selected-world-photos { grid-template-columns: 1fr; }
 }
