@@ -2111,3 +2111,12 @@ h2.section-lead {
 @media (max-width: 720px) {
   .selected-world-photos { grid-template-columns: 1fr; }
 }
+
+.illustrated-guide .essay-header h1 { max-width: 18ch; }
+.guide-page { margin: 12px 0 20px; display: grid; gap: 16px; }
+.guide-page figcaption { display: grid; gap: 8px; }
+.guide-page .eyebrow { margin: 0; }
+.illustrated-guide .guide-page h2 { margin: 0; max-width: none; font-size: clamp(1.4rem, 2.6vw, 2rem); }
+.guide-page img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.illustrated-guide .guide-reading-note { font-family: var(--sans); font-size: 0.9rem; color: var(--muted); }
+.guide-related { display: grid; gap: 12px; padding-top: 24px; border-top: 1px solid rgba(61, 44, 35, 0.14); }
