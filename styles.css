@@ -966,8 +966,25 @@ h2.section-lead {
   padding: 6px 0;
 }
 
-.gathering-card-single-image .gathering-body {
-  flex: 1;
+.gathering-card-photo-story .gathering-gallery {
+  display: grid;
+  grid-template-rows: auto;
+  align-self: center;
+}
+
+.gathering-card-photo-story .gathering-gallery img {
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
+.gathering-card-photo-story .gathering-materials-photo {
+  filter: brightness(1.18);
+}
+
+.gathering-card-photo-story .gathering-gallery .gathering-sharing-photo {
+  aspect-ratio: 1;
+  object-position: 58% 65%;
+  filter: brightness(1.08);
 }
 
 .gathering-title {
@@ -1582,6 +1599,15 @@ h2.section-lead {
 }
 
 @media (max-width: 1080px) {
+  .gathering-card-photo-story .gathering-media {
+    min-height: 0;
+    aspect-ratio: 3 / 2;
+  }
+
+  .gathering-card-photo-story .gathering-gallery .gathering-sharing-photo {
+    aspect-ratio: 3 / 2;
+  }
+
   .hero,
   .statement-grid,
   .evolution-layout,
