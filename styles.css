@@ -709,6 +709,20 @@ h2.section-lead {
   max-width: none;
 }
 
+.gatherings-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: min(100%, 980px);
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.gatherings-signup .gatherings-intro {
+  text-align: center;
+}
+
 .gatherings-grid {
   grid-template-columns: 1fr;
 }
